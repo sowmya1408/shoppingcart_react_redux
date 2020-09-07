@@ -1,38 +1,79 @@
-.App {
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto, sans-serif';
+  list-style: none;
+  text-decoration: none;
+
+
+}
+
+.navList {
+  display: flex;
+  justify-content: flex-end;
+  
+}
+
+
+
+.navList a{
+  color: #000;
+  background-color: #fff;
+  margin: 10px ;
+}
+
+.cart ion-icon {
+  vertical-align: bottom;
+  font-size: 20px;
+  padding-right: 5px;
+}
+
+.cart a {
+  background-color: rgb(62, 101, 219);
+  color: #fff;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  padding-bottom: 100px;
+}
+
+.image img{
+  height: 200px;
+  width: 200px;
+}
+
+.image {
+  margin-right: 20px;
+  margin-left: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.addToCart {
+  position: absolute;
+  width: 100%;
+  background-color: rgb(185, 164, 164);
+  transition: all 0.3 ease-in-out;
+  opacity: 0;
+  cursor: pointer;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.image:hover .cart1,
+.image:hover .cart2,
+.image:hover .cart3,
+.image:hover .cart4 {
+  bottom: 50px;
+  opacity: 1;
+  padding: 10px;
+  text-decoration: none;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
